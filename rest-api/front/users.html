@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Management</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+  <link rel="stylesheet" href="css/didysispratimas.css" />
+  <script src="js/didysispratimas.js"></script>
+  <script src="https://kit.fontawesome.com/52a29ee74f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page-grid">
+    <header class="page-grid__navbar">
+      <ul class="menu">
+        <li>
+          <a href="/memberships.html">Memberships</a>
+        </li>
+        <li>
+          <a href="/users.html" class="active">Users</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-grid__main">
+      <div class="header-content">
+        <h1>
+          Users Management
+        </h1>
+        <p>
+          Here you can bla bla
+        </p>
+        <a href="newUser.html" class="button">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          New User
+        </a>
+      </div>
+      <div class="box-container" id="usersListContainer">
+
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="page-grid__footer">
+    &copy; 2021 Jurgita Germanavičienė
+  </footer>
+
+  <script>
+    (function () {
+      displayUsersList();
+    })();
+  </script>
+</body>
+
+
+</html>

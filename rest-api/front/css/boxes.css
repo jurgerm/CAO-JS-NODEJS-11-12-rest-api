@@ -1,0 +1,12 @@
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-container .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+  border: 1px solid black;
+}

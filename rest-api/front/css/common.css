@@ -1,0 +1,21 @@
+ul.menu {
+  text-align: center;
+  display: flex;
+  max-width: 700px;
+  flex: 1 1 0px;
+}
+
+ul.menu li {
+  display: inline-flexbox;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  width: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+}
+
+button.button {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}

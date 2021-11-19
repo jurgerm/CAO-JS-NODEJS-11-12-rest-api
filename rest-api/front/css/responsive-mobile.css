@@ -1,0 +1,38 @@
+.page-grid {
+  display: grid;
+  height: 100vh;
+  grid-template: "navbar" auto "main" auto "footer" auto / 100%;
+}
+/* ----------------- header dalis ------------------  */
+.page-grid__navbar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-background-color);
+}
+
+/* ----------------- Main dalis ------------------  */
+
+/* ------------------------------------------------ */
+
+.page-grid__main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  background: var(--main-background-color);
+}
+
+.page-grid__footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-background-color);
+  padding-bottom: 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Membership</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+  <link rel="stylesheet" href="css/didysispratimas.css" />
+  <script src="js/didysispratimas.js"></script>
+  <script src="https://kit.fontawesome.com/52a29ee74f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page-grid">
+    <header class="page-grid__navbar">
+      <ul class="menu">
+        <li>
+          <a href="/memberships.html">Memberships</a>
+        </li>
+        <li>
+          <a href="/users.html">Users</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-grid__main">
+      <div class="header-content">
+        <h1>
+          New Membership
+        </h1>
+      </div>
+      <div class="content">
+        <form id="newMembershipformId">
+          <div class="row">
+            <label for="name">Name:</label>
+            <input id="name" class="input" name="name" type="text" value="" placeholder="Silver" required />
+          </div>
+          <div class="row">
+            <label for="price">Membership Price :</label>
+            <input id="price" class="input" name="price" type="number" value="" placeholder="2,99"
+              min="0" step="0.01" required />
+          </div>
+          <div class="row">
+            <label for="description">Description:</label>
+            <input id="description" class="input" name="description" type="text" value="" placeholder="Description"
+              required />
+          </div>
+
+          <a href="memberships.html" class="button">Cancel </a>
+
+          <button id="submit_button" type="submit">New Membership</button>
+
+        </form>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="page-grid__footer">
+  Copyright &copy; 2021 Jurgita Germanavičienė
+  </footer>
+  <script>
+    (function () {
+      initNewMembershipPage();
+    })();
+  </script>
+</body>
+
+
+</html>

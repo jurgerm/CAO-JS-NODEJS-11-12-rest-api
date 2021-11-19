@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New User</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+  <link rel="stylesheet" href="css/didysispratimas.css" />
+  <script src="js/didysispratimas.js"></script>
+  <script src="https://kit.fontawesome.com/52a29ee74f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="page-grid">
+    <header class="page-grid__navbar">
+      <ul class="menu">
+        <li>
+          <a href="/memberships.html">Msemberships</a>
+        </li>
+        <li>
+          <a href="/users.html" class="active">Users</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-grid__main">
+      <div class="header-content">
+        <h1>
+          Create User
+        </h1>
+      </div>
+      <div class="content">
+        <form id="newUserFormId">
+
+          <div class="row">
+            <label for="name">First Name:</label>
+            <input id="name" class="input" name="name" type="text" value="" placeholder="Jurgita" required />
+          </div>
+
+          <div class="row">
+            <label for="name">Last Name:</label>
+            <input id="surname" class="input" name="surname" type="text" value="" placeholder="Germanavičienė"
+              required />
+          </div>
+          <div class="row">
+            <label for="name">Email Address:</label>
+            <input id="email" class="input" name="email" type="text" value="" placeholder="jurgita@ubikas.lt"
+              required />
+          </div>
+          <div class="row">
+            <label for="name">Change Membership:</label>
+            <select id="membership_id" class="input" name="membership_id" required>
+
+            </select>
+          </div>
+
+          <a href="memberships.html" class="button">Cancel </a>
+
+          <button id="submit_button" type="submit">New User</button>
+
+        </form>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="page-grid__footer">
+    Copyright &copy; 2021 Jurgita Germanavičienė
+  </footer>
+  <script>
+    (function () {
+      initNewUserPage();
+    })();
+  </script>
+</body>
+
+
+</html>
